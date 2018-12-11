@@ -45,7 +45,7 @@ func main() {
 	// Send the admin user a notification.
 	// The embedded inner type's implementation of the
 	// interface is "promoted" to the outer type.
-	sendNotification(&ad)
+	sendNotification(&ad) //by huangfeng 内部类型提升，admin并没有实现notifier接口
 }
 
 // sendNotification accepts values that implement the notifier
