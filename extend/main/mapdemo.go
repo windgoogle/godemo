@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"unsafe"
+)
 
 func main() {
 	var m map[int]string = map[int]string{
@@ -69,6 +72,8 @@ func main() {
 	for name := range fruits {
 		fmt.Println(name)
 	}
+
+	fmt.Println(unsafe.Sizeof(fruits)) //字典变量存的是指针，指向map头部,所以字典变量内存占用是8字节（64位），32位是4字节
 
 	//内置map 不是线程（协程）安全的，需要用锁来控制
 
