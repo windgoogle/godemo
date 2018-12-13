@@ -31,4 +31,6 @@ func main() {
 	fmt.Println("Contact")
 	fmt.Println("H:", c["contact"].(map[string]interface{})["home"])
 	fmt.Println("C:", c["contact"].(map[string]interface{})["cell"])
+	fmt.Println("contact child map:", c["contact"])
+
 }
