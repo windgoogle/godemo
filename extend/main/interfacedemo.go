@@ -48,7 +48,7 @@ func main() {
 	s2.eat()
 	//空接口 interface{} 任何结构体隐式的实现了空接口
 	//GO自己内置了空接口，避免用户重复实现空接口
-	//空接口可认为类似java 里的Object类型，任何对象都继承自Object
+	//空接口可认为类似java 里的Object类型，任何对象都继承自Object ,就是Any类型
 	//这个map 里的值为空接口类型，可以容纳任何类型的对象，在获取需要做类型转换
 	var user = map[string]interface{}{
 		"age":     30,
